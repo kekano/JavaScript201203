@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Hello, World ! </title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+<!--
+function closure(init) {
+  var counter = init;
+
+  return function() {
+    return ++counter;
+  }
+}
+
+var myClosure1 = closure(1);
+var myClosure2 = closure(100);
+
+document.writeln(myClosure1());
+document.writeln(myClosure2());
+document.writeln(myClosure1());
+document.writeln(myClosure2());
+
+//-->
+</script>
+</pre>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Hello, World ! </title>
+</head>
+<body>
+<pre>
+<script type="text/javascript">
+<!--
+var scope = 'Global Variable';
+
+function checkScope() {
+  var scope = 'Local Valiable';
+
+  var f_lit = function() { return scope;};
+  document.writeln(f_lit());
+
+  var f_con = new Function('return scope;');
+  document.writeln(f_con());
+}
+
+checkScope();
+//-->
+</script>
+</pre>
+</body>
+</html>
+
